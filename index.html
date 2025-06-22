@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>インド留学エージェント - バンガロールでの教育</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #333; /* Darker text for readability */
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #4CAF50, #2196F3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1200x600/E0F7FA/00796B?text=バンガロールの美しい風景'); /* Placeholder image for Bangalore */
+            background-size: cover;
+            background-position: center;
+        }
+        /* Custom button styles for a more attractive look */
+        .btn-meet {
+            background: linear-gradient(to right, #4285F4, #34A853); /* Google colors */
+            box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-meet:hover {
+            background: linear-gradient(to right, #34A853, #4285F4);
+            box-shadow: 0 6px 20px rgba(66, 133, 244, 0.6);
+            transform: translateY(-2px);
+        }
+        .btn-zoom {
+            background: linear-gradient(to right, #2D8CFF, #0077ED); /* Zoom colors */
+            box-shadow: 0 4px 15px rgba(45, 140, 255, 0.4);
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-zoom:hover {
+            background: linear-gradient(to right, #0077ED, #2D8CFF);
+            box-shadow: 0 6px 20px rgba(45, 140, 255, 0.6);
+            transform: translateY(-2px);
+        }
+        /* General card hover effect */
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo/Site Title -->
+            <a href="#" class="text-2xl md:text-3xl font-bold text-gray-800 rounded-lg p-2 hover:bg-gray-100 transition duration-300">
+                インド留学GATEWAY <span class="text-green-600">JAPAN</span>
+            </a>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300">ホーム</a>
+                <a href="#about" class="text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300">当サービスについて</a>
+                <a href="#services" class="text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300">提供サービス</a>
+                <a href="#universities" class="text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300">大学紹介</a>
+                <a href="#booking" class="text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300">オンライン相談予約</a>
+                <a href="#contact" class="text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300">お問い合わせ</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-green-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-4 rounded-lg shadow-lg p-4">
+            <nav class="flex flex-col space-y-4">
+                <a href="#home" class="block text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300 py-2 px-4 rounded-md hover:bg-gray-100">ホーム</a>
+                <a href="#about" class="block text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300 py-2 px-4 rounded-md hover:bg-gray-100">当サービスについて</a>
+                <a href="#services" class="block text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300 py-2 px-4 rounded-md hover:bg-gray-100">提供サービス</a>
+                <a href="#universities" class="block text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300 py-2 px-4 rounded-md hover:bg-gray-100">大学紹介</a>
+                <a href="#booking" class="block text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300 py-2 px-4 rounded-md hover:bg-gray-100">オンライン相談予約</a>
+                <a href="#contact" class="block text-lg font-medium text-gray-700 hover:text-green-600 transition duration-300 py-2 px-4 rounded-md hover:bg-gray-100">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg relative h-screen flex items-center justify-center text-center text-white p-6">
+            <div class="absolute inset-0 bg-black opacity-60 rounded-lg"></div>
+            <div class="relative z-10 max-w-4xl mx-auto p-6 bg-white bg-opacity-10 backdrop-blur-sm rounded-xl shadow-2xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight rounded-lg p-2">
+                    バンガロールで<span class="text-gradient">英語スピーキングスキルを向上させましょう！</span><br>最高のサポートを<span class="font-bold text-yellow-300">無料で</span>提供します。
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 font-light leading-relaxed rounded-lg p-2">
+                    エージェント手数料は<span class="font-bold text-yellow-300">一切無料</span>で、<br class="md:hidden">質の高い英語コースをご紹介し、インドでの学習を強力に後押しします。
+                </p>
+                <a href="#booking" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg md:text-xl shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50">
+                    無料オンライン相談を予約する
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-white px-6 md:px-12">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 text-gray-800 rounded-lg p-2">
+                    当サービスについて
+                </h2>
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://placehold.co/600x400/D0E0F0/00796B?text=サポートのイメージ" alt="サポートのイメージ" class="rounded-2xl shadow-xl w-full h-auto">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-lg md:text-xl leading-relaxed mb-6 text-gray-700">
+                            「インド留学GATEWAY JAPAN」は、日本の皆様がインドでの高品質な<span class="font-bold text-green-600">英語コース</span>を受講できるよう、最適な教育機関を<span class="font-bold">ご紹介</span>し、その後の大学進学やキャリア形成へと繋げられるようサポートするエージェントプラットフォームです。特にインドのシリコンバレーとして知られるバンガロールでの学習に特化しており、現地の生活から英語学習、そして大学入学まで、トータルでサポートいたします。
+                        </p>
+                        <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                            他の留学エージェントと比較して、私たちの<span class="font-bold">紹介サービスは手数料が一切無料</span>で、透明性が高く、余分な費用を請求しません。<span class="font-bold text-green-600">非常にリーズナブルな価格</span>で充実した英語学習とインドでの新しい挑戦を実現できます。安心と信頼のサービスで、あなたの新しい挑戦を応援します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-blue-50 px-6 md:px-12">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 text-gray-800 rounded-lg p-2">
+                    私たちの包括的なエージェントサービス
+                </h2>
+                <p class="text-center text-lg md:text-xl mb-12 text-gray-700">
+                    インド留学を成功させるために、英語学習から生活のサポートまで、お客様のニーズに合わせた充実したサービスを<span class="font-bold">無料で手配・ご紹介</span>しています。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-green-500 transform transition duration-300 card-hover">
+                        <div class="text-5xl mb-4 text-green-600">📚</div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">質の高い英語コースの紹介</h3>
+                        <p class="text-gray-700 text-base md:text-lg">
+                            提携先の専門講師による実践的な英語コースを<span class="font-bold">ご紹介</span>し、留学生活に必要なコミュニケーション能力を効率的に習得できるようサポートします。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 transform transition duration-300 card-hover">
+                        <div class="text-5xl mb-4 text-blue-600">🎓</div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">大学・教育機関への編入サポート</h3>
+                        <p class="text-gray-700 text-base md:text-lg">
+                            英語コース修了後、キリスト大学をはじめとするバンガロールの優良な大学・教育機関への編入をサポートします。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-purple-500 transform transition duration-300 card-hover">
+                        <div class="text-5xl mb-4 text-purple-600">🏠</div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">安全で快適な滞在先手配</h3>
+                        <p class="text-gray-700 text-base md:text-lg">
+                            学生寮、アパート、ホームステイなど、お客様の希望に合わせた安全で快適な滞在先の手配を<span class="font-bold">無料で</span>お手伝いします。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-red-500 transform transition duration-300 card-hover">
+                        <div class="text-5xl mb-4 text-red-600">📱</div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">SIMカード手配サポート</h3>
+                        <p class="text-gray-700 text-base md:text-lg">
+                            インド到着後すぐに携帯電話が使えるよう、現地でのSIMカードの<span class="font-bold">無料手配</span>をスムーズにサポートいたします。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-yellow-500 transform transition duration-300 card-hover">
+                        <div class="text-5xl mb-4 text-yellow-600">✈️</div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">安心の空港送迎手配サービス</h3>
+                        <p class="text-700 text-base md:text-lg">
+                            バンガロール国際空港到着時・出発時に、安全かつスムーズな送迎サービスを<span class="font-bold">無料で</span>手配し、不安なく移動できます。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-teal-500 transform transition duration-300 card-hover">
+                        <div class="text-5xl mb-4 text-teal-600">💰</div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">圧倒的な低価格サポート</h3>
+                        <p class="text-gray-700 text-base md:text-lg">
+                            留学費用を抑えたい学生のために、当エージェントの<span class="font-bold">無料サポート</span>を通じて、提携先からのリーズナブルな価格設定で包括的な留学を<span class="font-bold">実現できるよう仲介</span>します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Universities Section (Adjusted to highlight English readiness) -->
+        <section id="universities" class="py-16 md:py-24 bg-gray-100 px-6 md:px-12">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 text-gray-800 rounded-lg p-2">
+                    英語学習後の進学先候補
+                </h2>
+                <p class="text-center text-lg md:text-xl mb-12 text-gray-700">
+                    当社がご紹介する英語コースでしっかりと基礎を築いた後、バンガロールには多様な学問分野と国際的な環境が魅力の大学があります。ここでは、特に人気の高い進学先候補をご紹介します。
+                </p>
+
+                <!-- Christ University Card -->
+                <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-12 flex flex-col md:flex-row items-center md:space-x-10 border-b-4 border-green-500 hover:shadow-2xl transition duration-300 card-hover">
+                    <div class="md:w-1/3 mb-8 md:mb-0">
+                        <img src="https://placehold.co/400x300/A0D0F0/00796B?text=キリスト大学ロゴ" alt="キリスト大学ロゴ" class="rounded-2xl w-full h-auto shadow-md">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4 rounded-lg p-2">
+                            キリスト大学 (Christ University)
+                        </h3>
+                        <p class="text-lg md:text-xl leading-relaxed mb-6 text-gray-700">
+                            バンガロールに位置するキリスト大学は、英語力があればさらにその学びを深めることができる優れた教育機関です。質の高い教育、革新的なカリキュラム、そして活気あるキャンパスライフで国際的に高く評価されています。ビジネス、科学、人文科学、法学など多岐にわたる学部があり、多様なバックグラウンドを持つ学生が集まる国際的な学習環境を提供しています。
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 text-base md:text-lg mb-6 space-y-2">
+                            <li><span class="font-semibold">国際的な評価:</span> 優れた教育水準と研究で知られています。</li>
+                            <li><span class="font-semibold">多様なコース:</span> 幅広い学問分野から選択可能です。</li>
+                            <li><span class="font-semibold">活気あるキャンパス:</span> 課外活動やイベントが豊富です。</li>
+                        </ul>
+                        <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-md transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50">
+                            キリスト大学への留学を相談する
+                        </a>
+                    </div>
+                </div>
+
+                <!-- You can add more university cards here following the same structure -->
+                <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center md:space-x-10 hover:shadow-2xl transition duration-300 card-hover">
+                    <div class="md:w-1/3 mb-8 md:mb-0">
+                        <img src="https://placehold.co/400x300/C0E0F0/00796B?text=バンガロール大学" alt="バンガロール大学ロゴ" class="rounded-2xl w-full h-auto shadow-md">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4 rounded-lg p-2">
+                            バンガロール大学 (Bangalore University)
+                        </h3>
+                        <p class="text-lg md:text-xl leading-relaxed mb-6 text-gray-700">
+                            当社がご紹介する英語コースを修了後、バンガロール大学も進学先として考慮できる歴史ある大学の一つです。広大なキャンパスと多様な教育プログラムを提供しており、特に人文科学、社会科学、理学の分野で高い評価を得ています。
+                        </p>
+                        <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-md transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50">
+                            バンガロール大学について相談する
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="py-16 md:py-24 bg-white px-6 md:px-12">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 text-gray-800 rounded-lg p-2">
+                    なぜ私たちを選ぶのか？
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-gradient-to-br from-green-100 to-green-50 p-8 rounded-2xl shadow-lg border-l-4 border-green-500 hover:shadow-xl transition duration-300 transform hover:-translate-y-2 card-hover">
+                        <div class="text-5xl mb-4 text-green-600">💡</div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">圧倒的な低価格</h3>
+                        <p class="text-gray-700 text-base md:text-lg">
+                            他社エージェントの手数料と比較して<span class="font-bold">当エージェントは無料</span>で、質の高い英語コースの紹介や留学サポートを<span class="font-bold">提供</span>します。無駄な費用を削減し、学生の皆様の負担を軽減します。
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-50 p-8 rounded-2xl shadow-lg border-l-4 border-blue-500 hover:shadow-xl transition duration-300 transform hover:-translate-y-2 card-hover">
+                        <div class="text-5xl mb-4 text-blue-600">🤝</div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">現地密着型サポート</h3>
+                        <p class="text-gray-700 text-base md:text-lg">
+                            バンガロールに特化しているため、現地の最新情報や生活のノウハウまで、きめ細やかなサポートが可能です。<span class="font-bold">英語学習機関への紹介から大学進学まで一貫してサポート。</span>
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-yellow-100 to-yellow-50 p-8 rounded-2xl shadow-lg border-l-4 border-yellow-500 hover:shadow-xl transition duration-300 transform hover:-translate-y-2 card-hover">
+                        <div class="text-5xl mb-4 text-yellow-600">✨</div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">パーソナルな対応</h3>
+                        <p class="text-gray-700 text-base md:text-lg">
+                            一人ひとりの英語レベルや目標に合わせた最適な学習プラン、そしてその後の進路まで徹底的に<span class="font-bold">ご紹介・サポート</span>します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Online Consultation Booking Section -->
+        <section id="booking" class="py-16 md:py-24 bg-purple-50 px-6 md:px-12">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-8 rounded-lg p-2">
+                    無料オンライン相談を予約する
+                </h2>
+                <p class="text-lg md:text-xl text-gray-700 mb-10 leading-relaxed">
+                    インド留学や英語学習に関するご質問、ご不安な点など、何でもお気軽にご相談ください。<br>
+                    経験豊富なスタッフが、あなたの留学計画を具体的にサポートします。
+                </p>
+                <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8">
+                    <a href="https://meet.google.com/" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center btn-meet text-white font-bold py-4 px-10 rounded-full text-lg md:text-xl shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50">
+                        <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-4H7V8h4v8zm4-2h-2V8h2v6zm-4-9h-2V5h2v2zM15 9h2v2h-2V9zm-3-5c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8z"></path>
+                        </svg>
+                        Google Meetで予約
+                    </a>
+                    <a href="https://zoom.us/" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center btn-zoom text-white font-bold py-4 px-10 rounded-full text-lg md:text-xl shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50">
+                        <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 12c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm-2-7h2V3h-2v2zm0 14h2v-2h-2v2zM5 12c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3zm14 0c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zM3 12c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3zm18 0c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zM12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+                        </svg>
+                        Zoomで予約
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-50 px-6 md:px-12">
+            <div class="container mx-auto max-w-3xl">
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 text-gray-800 rounded-lg p-2">
+                    お問い合わせ
+                </h2>
+                <p class="text-center text-lg md:text-xl mb-12 text-gray-700">
+                    オンライン相談以外のご質問やご相談は、以下のフォームよりお気軽にお問い合わせください。
+                </p>
+                <form class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border-t-4 border-green-500">
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-700 text-lg font-medium mb-2">お名前</label>
+                        <input type="text" id="name" name="name" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-200 text-lg" placeholder="例：山田 太郎">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 text-lg font-medium mb-2">メールアドレス</label>
+                        <input type="email" id="email" name="email" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-200 text-lg" placeholder="例：your.email@example.com">
+                    </div>
+                    <div class="mb-6">
+                        <label for="phone" class="block text-gray-700 text-lg font-medium mb-2">電話番号 (任意)</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-200 text-lg" placeholder="例：090-1234-5678">
+                    </div>
+                    <div class="mb-8">
+                        <label for="message" class="block text-gray-700 text-lg font-medium mb-2">お問い合わせ内容</label>
+                        <textarea id="message" name="message" rows="6" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-200 text-lg" placeholder="ご質問やご相談内容をご記入ください。"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50">
+                            送信
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12">
+        <div class="container mx-auto text-center text-lg">
+            <p class="mb-4">© 2023 インド留学GATEWAY JAPAN. All rights reserved.</p>
+            <!-- New section for student creators -->
+            <div class="text-gray-400 text-sm md:text-base mt-6">
+                <p class="mb-2">当サイトは、キリスト大学の学生によって作成されました:</p>
+                <ul class="list-none p-0 m-0">
+                    <li class="mb-1">
+                        <span class="font-semibold">Samarth Shenoy K</span> (バンガロール, BBA FIB)
+                    </li>
+                    <li>
+                        <span class="font-semibold">Akito Oishi</span> (日本, 静岡, BBA FIB)
+                    </li>
+                </ul>
+            </div>
+            <div class="flex justify-center space-x-6 mt-4">
+                <!-- Placeholder for social media icons -->
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.35c.17.06.35.1.53.1a5.95 5.95 0 003.88-1.52c.86-.71 1.48-1.74 1.76-2.92.28-1.18.23-2.38-.13-3.47a6.05 6.05 0 00-1.07-2.73 5.95 5.95 0 00-2.8-1.78c-1.11-.27-2.28-.2-3.35.26-.95.42-1.75 1.05-2.29 1.83-.54.78-.79 1.63-.73 2.45.06.82.3 1.58.68 2.21.39.63.88 1.13 1.44 1.48.56.35 1.18.57 1.8.62a1.32 1.32 0 00.9-.38l.45-.46c.1-.11.12-.27.05-.41-.06-.14-.19-.23-.33-.23h-.04a2.95 2.95 0 01-1.3-.39 2.5 2.5 0 01-1.02-1.02c-.22-.32-.34-.7-.36-1.1a.95.95 0 00-.02-.15.82.82 0 00-.23-.4c-.11-.08-.22-.16-.31-.26-.1-.1-.18-.2-.25-.32a.7.7 0 00-.1-.13c-.02-.02-.04-.04-.06-.06l-.03-.03a.5.5 0 00-.06-.05c-.01-.01-.02-.01-.03-.02a.45.45 0 00-.05-.03c-.01 0-.02-.01-.03-.01H3.6c-.15 0-.27.1-.3.25-.03.15.05.3.18.38l.2.14c.24.18.49.33.75.45.27.12.55.22.84.29.29.07.58.11.88.11a4.07 4.07 0 002.32-.69c.5-.33.88-.78 1.12-1.3.24-.52.28-1.08.11-1.63-.17-.55-.54-1.03-1-1.39-.46-.36-.98-.59-1.5-.66a3.56 3.56 0 00-2.07.28c-.8.36-1.47.9-1.95 1.56-.48.66-.76 1.39-.81 2.15-.05.76.12 1.48.5 2.06.38.58.91 1.05 1.53 1.36.62.31 1.3.49 2.01.52.7.03 1.4-.08 2.06-.32a.9.9 0 01.35-.06zM15 4a3 3 0 100 6 3 3 0 000-6z" fill="currentColor"></path></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 6c-2.4 1.3-4.9 2.2-7.5 2.6C12.5 8.9 10 9 7.5 9c-2.5 0-5-.1-7.5-.4C0 8.5 2.5 7.6 5 6.3 7.5 5 10 4 12.5 4c2.5 0 5 1 7.5 2.3C22 6 22 6 22 6zM2 13c2.4 1.3 4.9 2.2 7.5 2.6C12.5 15.9 15 16 17.5 16c2.5 0 5-.1 7.5-.4C24 15.5 21.5 14.6 19 13.3 16.5 12 14 11 11.5 11c-2.5 0-5 1-7.5 2.3C2 13 2 13 2 13zM2 20c2.4 1.3 4.9 2.2 7.5 2.6C12.5 22.9 15 23 17.5 23c2.5 0 5-.1 7.5-.4C24 22.5 21.5 21.6 19 20.3 16.5 19 14 18 11.5 18c-2.5 0-5 1-7.5 2.3C2 20 2 20 2 20z" fill="currentColor"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                if (window.innerWidth < 768) { // md: breakpoint
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Toggle mobile menu visibility
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside (optional, for better UX)
+        document.addEventListener('click', (event) => {
+            const isClickInside = mobileMenu.contains(event.target) || mobileMenuButton.contains(event.target);
+            if (!isClickInside && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
